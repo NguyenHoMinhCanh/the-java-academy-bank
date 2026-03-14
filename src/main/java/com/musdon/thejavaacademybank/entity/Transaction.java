@@ -2,8 +2,10 @@ package com.musdon.thejavaacademybank.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.apache.commons.lang3.ArrayUtils;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
 
 @Getter
 @Setter
@@ -21,5 +23,5 @@ public class Transaction {
     private BigDecimal amount;
     private String accountNumber;
     private String status;
-
+    private LocalDate createdAt;
 }
